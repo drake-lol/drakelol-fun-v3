@@ -1,0 +1,80 @@
+body {
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.window {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 700px;
+  height: 500px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  user-select: none;
+  border-radius: 12.5px;
+}
+
+.titlebar {
+  height: 30px;
+  background-color: #0078d7;
+  cursor: move;
+  font-weight: bold;
+  color: white;
+  user-select: none;
+}
+
+.titlebar .title {
+  float: left;
+  margin-left: 5px;
+  line-height: 30px;
+}
+
+.titlebar .buttons {
+  float: right;
+  margin-right: 4px;
+  line-height: 30px;
+  display: flex;
+  margin-top: 4px;
+}
+
+.titlebar .buttons button {
+  float: right;
+  width: 100%/3;
+  height: 100%;
+}
+
+.close {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border-color: #00000000;
+  font-weight: bolder;
+}
+
+.maximize {
+  color: white;
+  background-color: skyblue;
+  border-radius: 5px;
+  border-color: #00000000;
+  font-weight: bolder;
+}
+
+.minimize {
+  color: white;
+  background-color: skyblue;
+  border-radius: 5px;
+  border-color: #00000000;
+  font-weight: bolder;
+}  
+
+.content {
+  height: calc(100% - 30px);
+  overflow: auto;
+  padding: 3px;
+  box-sizing: border-box;
+}

@@ -3,10 +3,10 @@ const titleBarEl = windowEl.querySelector('.titlebar');
 let isDragging = false;
 let mouseOffset = { x: 0, y: 0 };
 let windowOffset = { x: 0, y: 0 };
-let minLeft = 10;
-let maxLeft = window.innerWidth - windowEl.offsetWidth - 10;
-let minTop = 10;
-let maxTop = window.innerHeight - windowEl.offsetHeight - 10;
+let minLeft = 5;
+let maxLeft = window.innerWidth - windowEl.offsetWidth - 5;
+let minTop = 5;
+let maxTop = window.innerHeight - windowEl.offsetHeight - 5;
 
 function onMouseDown(event) {
   isDragging = true;

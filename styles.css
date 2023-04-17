@@ -1,9 +1,27 @@
+html, body {
+  height: 100%;
+}
+
 body {
   overflow: hidden;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
+.bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
 
 .window {
   position: absolute;
@@ -16,16 +34,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow: auto;
   user-select: none;
-  border-radius: 12.5px;
+  border-radius: 10px;
 }
 
 .titlebar {
-  height: 30px;
-  background-color: #0078d7;
-  cursor: move;
+  height: 32px;
+  background-color: #50505010;
+  cursor: default;
   font-weight: bold;
   color: white;
   user-select: none;
+  filter: blur(0px);
 }
 
 .titlebar .title {
@@ -46,6 +65,7 @@ body {
   float: right;
   width: 100%/3;
   height: 100%;
+  cursor: pointer;
 }
 
 .close {
@@ -73,7 +93,7 @@ body {
 }  
 
 .content {
-  height: calc(100% - 30px);
+  height: calc(500px - 32px);
   overflow: auto;
   padding: 3px;
   box-sizing: border-box;

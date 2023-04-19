@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'SEG-VAR-DB';
+  src: url(assets/fonts/Segoe/Segoe-UI-Variable-Static-Display-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'SEG-VAR-DSB';
+  src: url(assets/fonts/Segoe/Segoe-UI-Variable-Static-Display-SemiBold.ttf);
+}
+
 html, body {
   height: 99vh;
   width: 99vw;
+  font-family: 'SEG-VAR-DSB';
 }
 
 body {
@@ -40,17 +51,17 @@ body {
 
 .titlebar {
   height: 32px;
-  background: linear-gradient(180deg, rgba(114,123,125,0.5) 0%, rgba(114,123,125,0.5) 96%, rgba(110, 110, 110, 0.9) 96%, rgba(110, 110, 110, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(190, 190, 190, 0.7) 0%, rgba(190, 190, 190, 0.7) 96%, rgba(110, 110, 110, 0.9) 96%, rgba(110, 110, 110, 0.9) 100%);
   cursor: default;
   font-weight: bold;
-  color: white;
+  color: #000000;
   user-select: none;
-  backdrop-filter: blur(35px);
+  backdrop-filter: blur(50px) saturate(250%);
 }
 
 .titlebar .title {
   float: left;
-  margin-left: 5px;
+  margin-left: 9px;
   line-height: 30px;
 }
 
@@ -96,18 +107,83 @@ body {
 .content {
   height: calc(468px);
   overflow: hidden;
-  padding: 3px;
+  padding: 25px;
   box-sizing: border-box;
   background-color: #FFFFFFC0;
-  backdrop-filter: blur(96px) saturate(250%);
+  backdrop-filter: blur(96px) saturate(150%);
 }
 
 .page-navbar {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 96%, rgba(178, 178, 178, 0.9) 96%, rgba(178, 178, 178, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 96%, rgba(178, 178, 178, 0.9) 96%, rgba(178, 178, 178, 0.9) 100%);
   width: 100%;
-  height: 32px;
+  height: 30px;
   display: inline;
   position: fixed;
   left: 0px;
   top: 0px;
+}
+
+.navbar-buttons {
+  width: 100%;
+  height: 28.5px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 2px;
+  font-size: 18px;
+  line-height: 28.5px;
+}
+
+.home-button {
+  width: 65px;
+  text-align: center;
+  background-color: #00000000;
+  -webkit-transition:background-color 0.1s ease-in;
+  -moz-transition:background-color 0.1s ease-in;
+  -o-transition:background-color 0.1s ease-in;
+  transition:background-color 0.1s ease-in;
+  border-radius: 5px;
+  
+}
+
+.home-button:hover {
+  background-color: #00000015;
+  border-radius: 5px;
+}
+
+.edit-button {
+  width: 50px;
+  text-align: center;
+  background-color: #00000000;
+  -webkit-transition:background-color 0.1s ease-in;
+  -moz-transition:background-color 0.1s ease-in;
+  -o-transition:background-color 0.1s ease-in;
+  transition:background-color 0.1s ease-in;
+  border-radius: 5px;
+}
+
+.edit-button:hover {
+  background-color: #00000015;
+  border-radius: 5px;
+}
+
+.view-button {
+  width: 55px;
+  text-align: center;
+  background-color: #00000000;
+  -webkit-transition:background-color 0.1s ease-in;
+  -moz-transition:background-color 0.1s ease-in;
+  -o-transition:background-color 0.1s ease-in;
+  transition:background-color 0.1s ease-in;
+  border-radius: 5px;
+}
+
+.view-button:hover {
+  background-color: #00000015;
+  border-radius: 5px;
+}
+
+.home-header {
+  font-family: SEG-VAR-DB;
+  font-size: 25px;
+  position: relative;
 }

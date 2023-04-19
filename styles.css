@@ -1,5 +1,6 @@
 html, body {
-  height: 100%;
+  height: 99vh;
+  width: 99vw;
 }
 
 body {
@@ -25,8 +26,8 @@ body {
 
 .window {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 100px;
+  left: 100px;
   width: 700px;
   height: 500px;
   background-color: rgba(0, 0, 0, 0);
@@ -34,17 +35,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   user-select: none;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .titlebar {
   height: 32px;
-  background-color: #505050CF;
+  background: linear-gradient(180deg, rgba(114,123,125,0.5) 0%, rgba(114,123,125,0.5) 96%, rgba(110, 110, 110, 0.9) 96%, rgba(110, 110, 110, 0.9) 100%);
   cursor: default;
   font-weight: bold;
   color: white;
   user-select: none;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(35px);
 }
 
 .titlebar .title {
@@ -97,5 +98,16 @@ body {
   overflow: hidden;
   padding: 3px;
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #FFFFFFC0;
+  backdrop-filter: blur(96px) saturate(250%);
+}
+
+.page-navbar {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 96%, rgba(178, 178, 178, 0.9) 96%, rgba(178, 178, 178, 0.9) 100%);
+  width: 100%;
+  height: 32px;
+  display: inline;
+  position: fixed;
+  left: 0px;
+  top: 0px;
 }

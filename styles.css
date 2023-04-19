@@ -29,22 +29,22 @@ body {
   left: 50px;
   width: 700px;
   height: 500px;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  overflow: auto;
+  overflow: hidden;
   user-select: none;
   border-radius: 10px;
 }
 
 .titlebar {
   height: 32px;
-  background-color: #50505000;
+  background-color: #505050CF;
   cursor: default;
   font-weight: bold;
   color: white;
   user-select: none;
-  filter: blur(0px);
+  backdrop-filter: blur(16px);
 }
 
 .titlebar .title {
@@ -93,8 +93,9 @@ body {
 }  
 
 .content {
-  height: calc(500px - 32px);
-  overflow: auto;
+  height: calc(468px);
+  overflow: hidden;
   padding: 3px;
   box-sizing: border-box;
+  background-color: #FFFFFF;
 }
